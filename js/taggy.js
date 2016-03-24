@@ -28,3 +28,12 @@ $('#subnav a').click(function (e) {
 	$('.sb').hide();
 	$('#'+this.href.split('#')[1]).toggle();
 })
+
+/* Data List Image Upload Client */
+$('form input').change(function () {
+	if (this.files.length > 0) $('.dl_upload').hide();
+	$(".uploadStatus").toggle();
+	$(".uploadStatus").text(this.files.length + " file(s) ready to annotate!");
+
+	console.log(this.files[0]);
+});

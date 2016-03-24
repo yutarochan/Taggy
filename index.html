@@ -53,8 +53,12 @@
 
 		<!-- Dataset Listing Interface -->
 		<div class="sb" id="imglist">
-			<h3><b>Data List</b></h3>
-			<div class="alert alert-info" role="alert">You currently have no images present in your dataset. Start by draging and dropping images below or click upload to add images to the workspace below.</div>
+			<h3><b>Data List</b></h3><br/>
+			<form class="jumbotron dl_upload">
+				<h4>Add images to your dataset to get started!</h4>
+				<input type="file" multiple></input>
+	  		</form>
+			<p class="uploadStatus" style="display: none">No Images...</p>
 		</div>
 
 		<!-- Annotation Interface -->		
